@@ -16,6 +16,15 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
@@ -51,7 +60,7 @@
       </section>
 
       <section
-        class="min-h-[100px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex flex-col items-center py-6 gap-4"
+        class="font-hind min-h-[100px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex flex-col items-center py-6 gap-4"
       >
         <img class="w-[90px]" src="assets/logo-dark.png" alt="" />
         <h1 class="text-white font-bold text-3xl">
@@ -77,8 +86,10 @@
                   />
                   <i class="fa-regular fa-heart add_hearts"></i>
                 </div>
-                <h2 class="card-title font-bold">National Emergency Number</h2>
-                <p>National Emergency</p>
+                <h2 class="card-title font-bold font-hind">
+                  National Emergency Number
+                </h2>
+                <p class="font-roboto">National Emergency</p>
                 <h1 class="font-bold pt-4 text-xl">999</h1>
                 <p class="text-xs rounded-xl bg-gray-100 w-8 px-2 py-2">All</p>
                 <div class="justify-end card-actions">
@@ -91,6 +102,8 @@
                     </button>
                     <button
                       class="btn w-[155px] rounded-lg bg-green-500 text-white coin_deduct"
+                      data-name="National Emergency Number"
+                      data-number="999"
                     >
                       <i class="fa-solid fa-phone"></i>
                       Call
@@ -113,7 +126,9 @@
                 <h2 class="card-title font-bold">Police Helpline Number</h2>
                 <p>Police</p>
                 <h1 class="font-bold pt-4 text-xl">999</h1>
-                <p class="text-xs rounded-xl bg-gray-100 w-12 px-2 py-2">Police</p>
+                <p class="text-xs rounded-xl bg-gray-100 w-12 px-2 py-2">
+                  Police
+                </p>
                 <div class="justify-end card-actions">
                   <div class="pt-4 flex gap-2">
                     <button
@@ -124,6 +139,8 @@
                     </button>
                     <button
                       class="btn w-[155px] rounded-lg bg-green-500 text-white coin_deduct"
+                      data-name="Police Helpline Number"
+                      data-number="999"
                     >
                       <i class="fa-solid fa-phone"></i>
                       Call
@@ -157,6 +174,8 @@
                     </button>
                     <button
                       class="btn w-[155px] rounded-lg bg-green-500 text-white coin_deduct"
+                      data-name="Fire Service Number"
+                      data-number="999"
                     >
                       <i class="fa-solid fa-phone"></i>
                       Call
@@ -179,7 +198,9 @@
                 <h2 class="card-title font-bold">Ambulance Service</h2>
                 <p>Ambulance</p>
                 <h1 class="font-bold pt-4 text-xl">1994-999999</h1>
-                <p class="text-xs rounded-xl bg-gray-100 w-12 px-2 py-2">Health</p>
+                <p class="text-xs rounded-xl bg-gray-100 w-12 px-2 py-2">
+                  Health
+                </p>
                 <div class="justify-end card-actions">
                   <div class="pt-4 flex gap-2">
                     <button
@@ -190,6 +211,8 @@
                     </button>
                     <button
                       class="btn w-[155px] rounded-lg bg-green-500 text-white coin_deduct"
+                      data-name="Ambulance Service"
+                      data-number="1994-999999"
                     >
                       <i class="fa-solid fa-phone"></i>
                       Call
@@ -212,7 +235,9 @@
                 <h2 class="card-title font-bold">Women & Child Helpline</h2>
                 <p>Women & Child Helpline</p>
                 <h1 class="font-bold pt-4 text-xl">109</h1>
-                <p class="text-xs rounded-xl bg-gray-100 w-10 px-2 py-2">Help</p>
+                <p class="text-xs rounded-xl bg-gray-100 w-10 px-2 py-2">
+                  Help
+                </p>
                 <div class="justify-end card-actions">
                   <div class="pt-4 flex gap-2">
                     <button
@@ -223,6 +248,8 @@
                     </button>
                     <button
                       class="btn w-[155px] rounded-lg bg-green-500 text-white coin_deduct"
+                      data-name="Women & Child Helpline"
+                      data-number="109"
                     >
                       <i class="fa-solid fa-phone"></i>
                       Call
@@ -245,7 +272,9 @@
                 <h2 class="card-title font-bold">Anti-Corruption Helpline</h2>
                 <p>Anti-Corruption</p>
                 <h1 class="font-bold pt-4 text-xl">106</h1>
-                <p class="text-xs rounded-xl bg-gray-100 w-12 px-2 py-2">Govt.</p>
+                <p class="text-xs rounded-xl bg-gray-100 w-12 px-2 py-2">
+                  Govt.
+                </p>
                 <div class="justify-end card-actions">
                   <div class="pt-4 flex gap-2">
                     <button
@@ -256,6 +285,8 @@
                     </button>
                     <button
                       class="btn w-[155px] rounded-lg bg-green-500 text-white coin_deduct"
+                      data-name="Anti-Corruption Helpline"
+                      data-number="106"
                     >
                       <i class="fa-solid fa-phone"></i>
                       Call
@@ -278,7 +309,9 @@
                 <h2 class="card-title font-bold">Electricity Helpline</h2>
                 <p>Electricity Outage</p>
                 <h1 class="font-bold pt-4 text-xl">16216</h1>
-                <p class="text-xs rounded-xl bg-gray-100 w-18 px-2 py-2">Electricity</p>
+                <p class="text-xs rounded-xl bg-gray-100 w-18 px-2 py-2">
+                  Electricity
+                </p>
                 <div class="justify-end card-actions">
                   <div class="pt-4 flex gap-2">
                     <button
@@ -289,6 +322,8 @@
                     </button>
                     <button
                       class="btn w-[155px] rounded-lg bg-green-500 text-white coin_deduct"
+                      data-name="Electricity Helpline"
+                      data-number="16216"
                     >
                       <i class="fa-solid fa-phone"></i>
                       Call
@@ -322,6 +357,8 @@
                     </button>
                     <button
                       class="btn w-[155px] rounded-lg bg-green-500 text-white coin_deduct"
+                      data-name="Brac Helpline"
+                      data-number="16445"
                     >
                       <i class="fa-solid fa-phone"></i>
                       Call
@@ -341,10 +378,14 @@
                   />
                   <i class="fa-regular fa-heart add_hearts"></i>
                 </div>
-                <h2 class="card-title font-bold">Bangladesh Railway Helpline </h2>
+                <h2 class="card-title font-bold">
+                  Bangladesh Railway Helpline
+                </h2>
                 <p>Bangladesh Railway</p>
                 <h1 class="font-bold pt-4 text-xl">163</h1>
-                <p class="text-xs rounded-xl bg-gray-100 w-12 px-2 py-2">Travel</p>
+                <p class="text-xs rounded-xl bg-gray-100 w-12 px-2 py-2">
+                  Travel
+                </p>
                 <div class="justify-end card-actions">
                   <div class="pt-4 flex gap-2">
                     <button
@@ -355,6 +396,8 @@
                     </button>
                     <button
                       class="btn w-[155px] rounded-lg bg-green-500 text-white coin_deduct"
+                      data-name="Bangladesh Railway Helpline"
+                      data-number="163"
                     >
                       <i class="fa-solid fa-phone"></i>
                       Call
@@ -363,7 +406,6 @@
                 </div>
               </div>
             </div>
-
           </div>
           <div>
             <!-- Call History Section -->
