@@ -7,3 +7,19 @@ document.querySelectorAll(".add_hearts").forEach(function(heart){
         heart_counter.innerText = count;
     });
 });
+
+
+let coins = 100;
+const coin_counter = document.getElementById("coin_counter");
+document.querySelectorAll(".coin_deduct").forEach(function(button){
+    button.addEventListener("click", function(e){
+        e.preventDefault();
+        if (coins >= 20) {
+            coins -= 20;
+            coin_counter.innerText = coins;
+        } 
+        else{
+            alert("You do not have enough coins! Each call costs 20 coins!");
+        }
+    });
+});
