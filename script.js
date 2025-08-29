@@ -28,7 +28,7 @@ document.querySelectorAll('.coin_deduct').forEach(function (coin) {
 
       record.innerHTML = `
         <div>
-          <h1 class="font-bold text-lg font-inter">${service_name}</h1>
+          <h1 class="font-bold text-[16px] font-inter">${service_name}</h1>
           <p class="font-hind">${service_number}</p>
         </div>
         <span class="font-hind">${new Date().toLocaleTimeString()}</span>
