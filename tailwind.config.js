@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         hind: ["Hind Madurai", "sans-serif"],
-        roboto:["Roboto", "sans-serif"] 
+        roboto:["Roboto", "sans-serif"],
+        inter: ["Inter", "sans-serif"]
       },
     },
   },

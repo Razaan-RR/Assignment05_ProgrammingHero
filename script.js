@@ -20,7 +20,7 @@ document.querySelectorAll('.coin_deduct').forEach(function (coin) {
     if (coins >= 20) {
       coins -= 20
       document.getElementById('coin_counter').innerText = coins
-      alert(`Calling ${service_name} ${service_number}`)
+      alert(`📞 Calling ${service_name} ${service_number}`)
 
       const record = document.createElement('div')
       record.className =
@@ -28,10 +28,10 @@ document.querySelectorAll('.coin_deduct').forEach(function (coin) {
 
       record.innerHTML = `
         <div>
-          <h1 class="font-bold text-lg">${service_name}</h1>
-          <p>${service_number}</p>
+          <h1 class="font-bold text-lg font-inter">${service_name}</h1>
+          <p class="font-hind">${service_number}</p>
         </div>
-        <span>${new Date().toLocaleTimeString()}</span>
+        <span class="font-hind">${new Date().toLocaleTimeString()}</span>
       `
 
       historyContainer.prepend(record)

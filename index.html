@@ -24,11 +24,17 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="overflow-x-hidden">
     <div>
-      <section class="min-h-[80px] flex flex-col md:flex-row justify-between items-center px-4 md:px-10 py-4 gap-4 md:gap-0">
+      <section
+        class="min-h-[80px] flex flex-col md:flex-row justify-between items-center px-4 md:px-10 py-4 gap-4 md:gap-0"
+      >
         <div class="flex items-center gap-2">
           <img class="w-10 h-10" src="/assets/logo.png" alt="" />
           <h1 class="font-extrabold text-[#006747] text-xl">
@@ -40,17 +46,17 @@
           <button
             class="btn border-none bg-[#41FF6B]/10 px-4 rounded-full text-lg flex items-center gap-1"
           >
-            <span id="heart_counter" class="font-bold">0</span>
+            <span id="heart_counter" class="font-bold font-inter">0</span>
             <img class="w-6" src="assets/heart.png" alt="" />
           </button>
           <button
             class="btn border-none bg-[#41FF6B]/10 px-4 rounded-full text-lg flex items-center gap-1"
           >
-            <span id="coin_counter" class="font-bold">100</span>
+            <span id="coin_counter" class="font-bold font-inter">100</span>
             <img class="w-6" src="assets/coin.png" alt="" />
           </button>
           <button
-            class="btn border-none bg-[#00A63E] px-4 rounded-full text-white text-lg flex items-center gap-1"
+            class="btn border-none bg-[#00A63E] px-4 rounded-full text-white text-lg flex items-center gap-1 font-inter"
           >
             <span id="copy_counter" class="font-bold">0</span>
             copy
@@ -73,7 +79,9 @@
 
       <section class="min-h-screen bg-[#41FF6B]/10 px-4 md:px-10 py-8">
         <div class="flex flex-col lg:flex-row gap-10">
-          <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 flex-1">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 flex-1"
+          >
             <div class="card bg-base-100 card-lg shadow-sm">
               <div class="card-body">
                 <div class="flex justify-between items-center">
@@ -88,19 +96,23 @@
                   National Emergency Number
                 </h2>
                 <p class="font-roboto">National Emergency</p>
-                <h1 class="font-bold pt-4 text-xl">999</h1>
-                <p class="text-xs rounded-xl bg-gray-100 w-fit px-2 py-2">All</p>
+                <h1 class="font-bold pt-4 text-xl font-roboto">999</h1>
+                <p
+                  class="text-xs rounded-xl bg-gray-100 w-fit px-2 py-2 font-hind"
+                >
+                  All
+                </p>
                 <div class="justify-end card-actions">
                   <div class="pt-4 flex flex-col sm:flex-row gap-2">
                     <button
-                      class="btn flex-1 min-w-[155px] rounded-lg bg-white text-gray-500 add_copy"
+                      class="btn flex-1 min-w-[155px] rounded-lg bg-white text-gray-500 font-roboto add_copy"
                       data-number="999"
                     >
                       <i class="fa-regular fa-copy"></i>
                       Copy
                     </button>
                     <button
-                      class="btn flex-1 min-w-[155px] rounded-lg bg-green-500 text-white coin_deduct"
+                      class="btn flex-1 min-w-[155px] rounded-lg bg-green-500 text-white font-roboto coin_deduct"
                       data-name="National Emergency Number"
                       data-number="999"
                     >
@@ -122,23 +134,27 @@
                   />
                   <i class="fa-regular fa-heart add_hearts"></i>
                 </div>
-                <h2 class="card-title font-bold">Police Helpline Number</h2>
-                <p>Police</p>
-                <h1 class="font-bold pt-4 text-xl">999</h1>
-                <p class="text-xs rounded-xl bg-gray-100 w-fit px-2 py-2">
+                <h2 class="card-title font-bold font-hind">
+                  Police Helpline Number
+                </h2>
+                <p class="font-roboto">Police</p>
+                <h1 class="font-bold pt-4 text-xl font-roboto">999</h1>
+                <p
+                  class="text-xs rounded-xl bg-gray-100 w-fit px-2 py-2 font-hind"
+                >
                   Police
                 </p>
                 <div class="justify-end card-actions">
                   <div class="pt-4 flex flex-col sm:flex-row gap-2">
                     <button
-                      class="btn flex-1 min-w-[155px] rounded-lg bg-white text-gray-500 add_copy"
+                      class="btn flex-1 min-w-[155px] rounded-lg bg-white text-gray-500 font-roboto add_copy"
                       data-number="999"
                     >
                       <i class="fa-regular fa-copy"></i>
                       Copy
                     </button>
                     <button
-                      class="btn flex-1 min-w-[155px] rounded-lg bg-green-500 text-white coin_deduct"
+                      class="btn flex-1 min-w-[155px] rounded-lg bg-green-500 text-white font-roboto coin_deduct"
                       data-name="Police Helpline Number"
                       data-number="999"
                     >
@@ -160,21 +176,27 @@
                   />
                   <i class="fa-regular fa-heart add_hearts"></i>
                 </div>
-                <h2 class="card-title font-bold">Fire Service Number</h2>
-                <p>Fire Service</p>
-                <h1 class="font-bold pt-4 text-xl">999</h1>
-                <p class="text-xs rounded-xl bg-gray-100 w-fit px-2 py-2">Fire</p>
+                <h2 class="card-title font-bold font-hind">
+                  Fire Service Number
+                </h2>
+                <p class="font-roboto">Fire Service</p>
+                <h1 class="font-bold pt-4 text-xl font-roboto">999</h1>
+                <p
+                  class="text-xs rounded-xl bg-gray-100 w-fit px-2 py-2 font-hind"
+                >
+                  Fire
+                </p>
                 <div class="justify-end card-actions">
                   <div class="pt-4 flex flex-col sm:flex-row gap-2">
                     <button
-                      class="btn flex-1 min-w-[155px] rounded-lg bg-white text-gray-500 add_copy"
+                      class="btn flex-1 min-w-[155px] rounded-lg bg-white text-gray-500 font-roboto add_copy"
                       data-number="999"
                     >
                       <i class="fa-regular fa-copy"></i>
                       Copy
                     </button>
                     <button
-                      class="btn flex-1 min-w-[155px] rounded-lg bg-green-500 text-white coin_deduct"
+                      class="btn flex-1 min-w-[155px] rounded-lg bg-green-500 text-white font-roboto coin_deduct"
                       data-name="Fire Service Number"
                       data-number="999"
                     >
@@ -196,23 +218,27 @@
                   />
                   <i class="fa-regular fa-heart add_hearts"></i>
                 </div>
-                <h2 class="card-title font-bold">Ambulance Service</h2>
-                <p>Ambulance</p>
-                <h1 class="font-bold pt-4 text-xl">1994-999999</h1>
-                <p class="text-xs rounded-xl bg-gray-100 w-fit px-2 py-2">
+                <h2 class="card-title font-bold font-hind">
+                  Ambulance Service
+                </h2>
+                <p class="font-roboto">Ambulance</p>
+                <h1 class="font-bold pt-4 text-xl font-roboto">1994-999999</h1>
+                <p
+                  class="text-xs rounded-xl bg-gray-100 w-fit px-2 py-2 font-hind"
+                >
                   Health
                 </p>
                 <div class="justify-end card-actions">
                   <div class="pt-4 flex flex-col sm:flex-row gap-2">
                     <button
-                      class="btn flex-1 min-w-[155px] rounded-lg bg-white text-gray-500 add_copy"
+                      class="btn flex-1 min-w-[155px] rounded-lg bg-white text-gray-500 font-roboto add_copy"
                       data-number="1994-999999"
                     >
                       <i class="fa-regular fa-copy"></i>
                       Copy
                     </button>
                     <button
-                      class="btn flex-1 min-w-[155px] rounded-lg bg-green-500 text-white coin_deduct"
+                      class="btn flex-1 min-w-[155px] rounded-lg bg-green-500 text-white font-roboto coin_deduct"
                       data-name="Ambulance Service"
                       data-number="1994-999999"
                     >
@@ -234,23 +260,27 @@
                   />
                   <i class="fa-regular fa-heart add_hearts"></i>
                 </div>
-                <h2 class="card-title font-bold">Women & Child Helpline</h2>
-                <p>Women & Child Helpline</p>
-                <h1 class="font-bold pt-4 text-xl">109</h1>
-                <p class="text-xs rounded-xl bg-gray-100 w-fit px-2 py-2">
+                <h2 class="card-title font-bold font-hind">
+                  Women & Child Helpline
+                </h2>
+                <p class="font-roboto">Women & Child Helpline</p>
+                <h1 class="font-bold pt-4 text-xl font-roboto">109</h1>
+                <p
+                  class="text-xs rounded-xl bg-gray-100 w-fit px-2 py-2 font-hind"
+                >
                   Help
                 </p>
                 <div class="justify-end card-actions">
                   <div class="pt-4 flex flex-col sm:flex-row gap-2">
                     <button
-                      class="btn flex-1 min-w-[155px] rounded-lg bg-white text-gray-500 add_copy"
+                      class="btn flex-1 min-w-[155px] rounded-lg bg-white text-gray-500 font-roboto add_copy"
                       data-number="109"
                     >
                       <i class="fa-regular fa-copy"></i>
                       Copy
                     </button>
                     <button
-                      class="btn flex-1 min-w-[155px] rounded-lg bg-green-500 text-white coin_deduct"
+                      class="btn flex-1 min-w-[155px] rounded-lg bg-green-500 text-white font-roboto coin_deduct"
                       data-name="Women & Child Helpline"
                       data-number="109"
                     >
@@ -272,23 +302,27 @@
                   />
                   <i class="fa-regular fa-heart add_hearts"></i>
                 </div>
-                <h2 class="card-title font-bold">Anti-Corruption Helpline</h2>
-                <p>Anti-Corruption</p>
-                <h1 class="font-bold pt-4 text-xl">106</h1>
-                <p class="text-xs rounded-xl bg-gray-100 w-fit px-2 py-2">
+                <h2 class="card-title font-bold font-hind">
+                  Anti-Corruption Helpline
+                </h2>
+                <p class="font-roboto">Anti-Corruption</p>
+                <h1 class="font-bold pt-4 text-xl font-roboto">106</h1>
+                <p
+                  class="text-xs rounded-xl bg-gray-100 w-fit px-2 py-2 font-hind"
+                >
                   Govt.
                 </p>
                 <div class="justify-end card-actions">
                   <div class="pt-4 flex flex-col sm:flex-row gap-2">
                     <button
-                      class="btn flex-1 min-w-[155px] rounded-lg bg-white text-gray-500 add_copy"
+                      class="btn flex-1 min-w-[155px] rounded-lg bg-white text-gray-500 font-roboto add_copy"
                       data-number="106"
                     >
                       <i class="fa-regular fa-copy"></i>
                       Copy
                     </button>
                     <button
-                      class="btn flex-1 min-w-[155px] rounded-lg bg-green-500 text-white coin_deduct"
+                      class="btn flex-1 min-w-[155px] rounded-lg bg-green-500 text-white font-roboto coin_deduct"
                       data-name="Anti-Corruption Helpline"
                       data-number="106"
                     >
@@ -310,23 +344,27 @@
                   />
                   <i class="fa-regular fa-heart add_hearts"></i>
                 </div>
-                <h2 class="card-title font-bold">Electricity Helpline</h2>
-                <p>Electricity Outage</p>
-                <h1 class="font-bold pt-4 text-xl">16216</h1>
-                <p class="text-xs rounded-xl bg-gray-100 w-fit px-2 py-2">
+                <h2 class="card-title font-bold font-hind">
+                  Electricity Helpline
+                </h2>
+                <p class="font-roboto">Electricity Outage</p>
+                <h1 class="font-bold pt-4 text-xl font-roboto">16216</h1>
+                <p
+                  class="text-xs rounded-xl bg-gray-100 w-fit px-2 py-2 font-hind"
+                >
                   Electricity
                 </p>
                 <div class="justify-end card-actions">
                   <div class="pt-4 flex flex-col sm:flex-row gap-2">
                     <button
-                      class="btn flex-1 min-w-[155px] rounded-lg bg-white text-gray-500 add_copy"
+                      class="btn flex-1 min-w-[155px] rounded-lg bg-white text-gray-500 font-roboto add_copy"
                       data-number="16216"
                     >
                       <i class="fa-regular fa-copy"></i>
                       Copy
                     </button>
                     <button
-                      class="btn flex-1 min-w-[155px] rounded-lg bg-green-500 text-white coin_deduct"
+                      class="btn flex-1 min-w-[155px] rounded-lg bg-green-500 text-white font-roboto coin_deduct"
                       data-name="Electricity Helpline"
                       data-number="16216"
                     >
@@ -348,21 +386,25 @@
                   />
                   <i class="fa-regular fa-heart add_hearts"></i>
                 </div>
-                <h2 class="card-title font-bold">Brac Helpline</h2>
-                <p>Brac</p>
-                <h1 class="font-bold pt-4 text-xl">16445</h1>
-                <p class="text-xs rounded-xl bg-gray-100 w-fit px-2 py-2">NGO</p>
+                <h2 class="card-title font-bold font-hind">Brac Helpline</h2>
+                <p class="font-roboto">Brac</p>
+                <h1 class="font-bold pt-4 text-xl font-roboto">16445</h1>
+                <p
+                  class="text-xs rounded-xl bg-gray-100 w-fit px-2 py-2 font-hind"
+                >
+                  NGO
+                </p>
                 <div class="justify-end card-actions">
                   <div class="pt-4 flex flex-col sm:flex-row gap-2">
                     <button
-                      class="btn flex-1 min-w-[155px] rounded-lg bg-white text-gray-500 add_copy"
+                      class="btn flex-1 min-w-[155px] rounded-lg bg-white text-gray-500 font-roboto add_copy"
                       data-number="16445"
                     >
                       <i class="fa-regular fa-copy"></i>
                       Copy
                     </button>
                     <button
-                      class="btn flex-1 min-w-[155px] rounded-lg bg-green-500 text-white coin_deduct"
+                      class="btn flex-1 min-w-[155px] rounded-lg bg-green-500 text-white font-roboto coin_deduct"
                       data-name="Brac Helpline"
                       data-number="16445"
                     >
@@ -384,25 +426,27 @@
                   />
                   <i class="fa-regular fa-heart add_hearts"></i>
                 </div>
-                <h2 class="card-title font-bold">
+                <h2 class="card-title font-bold font-hind">
                   Bangladesh Railway Helpline
                 </h2>
-                <p>Bangladesh Railway</p>
-                <h1 class="font-bold pt-4 text-xl">163</h1>
-                <p class="text-xs rounded-xl bg-gray-100 w-fit px-2 py-2">
+                <p class="font-roboto">Bangladesh Railway</p>
+                <h1 class="font-bold pt-4 text-xl font-roboto">163</h1>
+                <p
+                  class="text-xs rounded-xl bg-gray-100 w-fit px-2 py-2 font-hind"
+                >
                   Travel
                 </p>
                 <div class="justify-end card-actions">
                   <div class="pt-4 flex flex-col sm:flex-row gap-2">
                     <button
-                      class="btn flex-1 min-w-[155px] rounded-lg bg-white text-gray-500 add_copy"
+                      class="btn flex-1 min-w-[155px] rounded-lg bg-white text-gray-500 font-roboto add_copy"
                       data-number="163"
                     >
                       <i class="fa-regular fa-copy"></i>
                       Copy
                     </button>
                     <button
-                      class="btn flex-1 min-w-[155px] rounded-lg bg-green-500 text-white coin_deduct"
+                      class="btn flex-1 min-w-[155px] rounded-lg bg-green-500 text-white font-roboto coin_deduct"
                       data-name="Bangladesh Railway Helpline"
                       data-number="163"
                     >
@@ -420,18 +464,20 @@
               <div class="flex justify-between items-center py-6 px-4">
                 <div class="flex justify-between items-center gap-2">
                   <i class="fa-regular fa-clock"></i>
-                  <h1 class="font-bold text-lg">Call History</h1>
+                  <h1 class="font-bold text-lg font-roboto">Call History</h1>
                 </div>
-                <button 
+                <button
                   id="clear_history"
-                  class="btn border-none bg-[#00A63E] w-24 rounded-full text-white text-lg"
+                  class="btn border-none bg-[#00A63E] w-24 rounded-full text-white text-lg font-inter"
                 >
                   Clear
                 </button>
               </div>
             </div>
-            <div id="call_history" class="py-2 px-4 max-h-[500px] overflow-y-auto">
-            </div>
+            <div
+              id="call_history"
+              class="py-2 px-4 max-h-[500px] overflow-y-auto"
+            ></div>
           </div>
         </div>
       </section>
